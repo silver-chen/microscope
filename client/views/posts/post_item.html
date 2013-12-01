@@ -6,6 +6,10 @@
       <p>
         submitted by {{author}}
         {{#if ownPost}}<a href="{{postEditPath this}}">Edit</a>{{/if}}
+        
+        submitted by {{author}},
+        <a href="{{postPagePath this}}">{{commentsCount}} comments</a> 
+        {{#if ownPost}}<a href="{{postEditPath this}}">Edit</a>{{/if}}
       </p>
       
     </div>
